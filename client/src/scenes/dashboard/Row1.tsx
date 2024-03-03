@@ -1,6 +1,9 @@
 import DashboardBox from "@/components/DashboardBox"
+import { useGetKPIsQuery } from "@/state/api";
 
 const Row1 = () =>{
+    const { data } = useGetKPIsQuery();
+
     return(
         <>
         <DashboardBox gridArea="a"></DashboardBox>
